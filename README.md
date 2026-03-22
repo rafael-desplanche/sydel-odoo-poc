@@ -1,0 +1,1 @@
+# sydel-odoo-poc
