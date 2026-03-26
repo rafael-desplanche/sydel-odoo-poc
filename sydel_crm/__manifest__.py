@@ -1,6 +1,6 @@
 {
     'name': 'Sydel CRM',
-    'version': '19.0.1.0.2',
+    'version': '19.0.1.0.3',
     'category': 'Sales/CRM',
     'summary': 'Module CRM custom pour le cabinet Sydel',
     'description': """

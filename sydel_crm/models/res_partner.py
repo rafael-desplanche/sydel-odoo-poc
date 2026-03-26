@@ -165,7 +165,7 @@ class ResPartner(models.Model):
         string="Attribué à",
     )
     contact_note = fields.Html(
-        string="Notes",
+        string="Notes Sydel",
     )
     last_interaction_date = fields.Datetime(
         string="Dernière interaction",
