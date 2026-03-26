@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sydel_capital_share_view_list" model="ir.ui.view">
+        <field name="name">sydel.capital.share.list</field>
+        <field name="model">sydel.capital.share</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="shareholder_id"/>
+                <field name="share_percentage"/>
+                <field name="share_count"/>
+                <field name="share_amount"/>
+                <field name="currency_id" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+</odoo>

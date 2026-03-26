@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="partner_category_prospect" model="res.partner.category">
+        <field name="name">Prospect</field>
+    </record>
+
+    <record id="partner_category_client" model="res.partner.category">
+        <field name="name">Client</field>
+    </record>
+
+    <record id="partner_category_partner" model="res.partner.category">
+        <field name="name">Partenaire</field>
+    </record>
+
+    <record id="partner_category_former_client" model="res.partner.category">
+        <field name="name">Ancien client</field>
+    </record>
+
+    <record id="partner_category_prescriber" model="res.partner.category">
+        <field name="name">Prescripteur</field>
+    </record>
+
+</odoo>

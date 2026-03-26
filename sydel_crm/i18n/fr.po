@@ -1,0 +1,679 @@
+# Translation file for Sydel CRM module
+# Generated on 2026-03-26 10:44
+msgid ""
+msgstr ""
+"Project-Id-Version: Sydel CRM 19.0.1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-26 10:44+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. module: sydel_crm
+#: models/sydel_contact_document.py
+msgid "Ajouté par"
+msgstr "Ajouté par"
+
+#. module: sydel_crm
+#: ./data/partner_category_data.xml
+msgid "Ancien client"
+msgstr "Ancien client"
+
+#. module: sydel_crm
+#: ./data/crm_stage_data.xml
+msgid "Appel de découverte"
+msgstr "Appel de découverte"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Association"
+msgstr "Association"
+
+#. module: sydel_crm
+#: models/sydel_capital_share.py
+msgid "Associé / Actionnaire"
+msgstr "Associé / Actionnaire"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Attribué à"
+msgstr "Attribué à"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Avocat"
+msgstr "Avocat"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Capital social"
+msgstr "Capital social"
+
+#. module: sydel_crm
+#: models/sydel_contact_document.py
+msgid "Catégorie"
+msgstr "Catégorie"
+
+#. module: sydel_crm
+#: ./data/partner_category_data.xml
+msgid "Client"
+msgstr "Client"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Code NAF / APE"
+msgstr "Code NAF / APE"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Comptabilité"
+msgstr "Comptabilité"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Conseil"
+msgstr "Conseil"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Contact"
+msgstr "Contact"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Contact lié"
+msgstr "Contact lié"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Contacts"
+msgstr "Contacts"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "Contrats"
+msgstr "Contrats"
+
+#. module: sydel_crm
+#: models/sydel_contact_document.py
+msgid "Date d"
+msgstr "Date d"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "Date d'ajout"
+msgstr "Date d'ajout"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Date de naissance"
+msgstr "Date de naissance"
+
+#. module: sydel_crm
+#: models/crm_lead.py
+msgid "Date de prochaine relance"
+msgstr "Date de prochaine relance"
+
+#. module: sydel_crm
+#: models/crm_lead.py
+msgid "Date de signature"
+msgstr "Date de signature"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Dernière interaction"
+msgstr "Dernière interaction"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Direction"
+msgstr "Direction"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "Dirigeant"
+msgstr "Dirigeant"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Dirigeants"
+msgstr "Dirigeants"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Documents"
+msgstr "Documents"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Début"
+msgstr "Début"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "Début de mandat"
+msgstr "Début de mandat"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Département de naissance"
+msgstr "Département de naissance"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Emploi"
+msgstr "Emploi"
+
+#. module: sydel_crm
+#: models/sydel_relation_type.py
+msgid "Ex: "
+msgstr "Ex: "
+
+#. module: sydel_crm
+#: models/sydel_contact_document.py
+msgid "Fichier"
+msgstr "Fichier"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Filiation"
+msgstr "Filiation"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Fin"
+msgstr "Fin"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "Fin de mandat"
+msgstr "Fin de mandat"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "Fonction"
+msgstr "Fonction"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "Fonction (autre)"
+msgstr "Fonction (autre)"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Forme juridique"
+msgstr "Forme juridique"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Forme juridique (autre)"
+msgstr "Forme juridique (autre)"
+
+#. module: sydel_crm
+#: ./data/relation_type_data.xml
+msgid "Fournisseur"
+msgstr "Fournisseur"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Identité"
+msgstr "Identité"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Identité société"
+msgstr "Identité société"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Immatriculée au RCS de"
+msgstr "Immatriculée au RCS de"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Informations légales"
+msgstr "Informations légales"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Informations professionnelles"
+msgstr "Informations professionnelles"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "La date de fin de mandat ne peut pas être antérieure à la date de début."
+msgstr "La date de fin de mandat ne peut pas être antérieure à la date de début."
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "La date de fin ne peut pas être antérieure à la date de début."
+msgstr "La date de fin ne peut pas être antérieure à la date de début."
+
+#. module: sydel_crm
+#: models/sydel_capital_share.py
+msgid "La somme des participations ne peut pas dépasser 100%%. "
+msgstr "La somme des participations ne peut pas dépasser 100%%. "
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Le code NAF/APE doit être au format 4 chiffres + 1 lettre majuscule (ex: 6920Z)."
+msgstr "Le code NAF/APE doit être au format 4 chiffres + 1 lettre majuscule (ex: 6920Z)."
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Le numéro RPPS doit contenir exactement 11 chiffres."
+msgstr "Le numéro RPPS doit contenir exactement 11 chiffres."
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Le numéro SIREN doit contenir exactement 9 chiffres."
+msgstr "Le numéro SIREN doit contenir exactement 9 chiffres."
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Le numéro SIRET doit contenir exactement 14 chiffres."
+msgstr "Le numéro SIRET doit contenir exactement 14 chiffres."
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Le numéro d'inscription à l'ordre doit contenir exactement 9 chiffres."
+msgstr "Le numéro d'inscription à l'ordre doit contenir exactement 9 chiffres."
+
+#. module: sydel_crm
+#: models/sydel_capital_share.py
+msgid "Le pourcentage de participation doit être compris entre 0 et 100."
+msgstr "Le pourcentage de participation doit être compris entre 0 et 100."
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Les 9 premiers chiffres du SIRET doivent correspondre au SIREN."
+msgstr "Les 9 premiers chiffres du SIRET doivent correspondre au SIREN."
+
+#. module: sydel_crm
+#: ./views/crm_lead_views.xml
+msgid "Lettre de mission"
+msgstr "Lettre de mission"
+
+#. module: sydel_crm
+#: ./data/crm_stage_data.xml
+msgid "Lettre de mission envoyée"
+msgstr "Lettre de mission envoyée"
+
+#. module: sydel_crm
+#: ./data/crm_stage_data.xml
+msgid "Lettre de mission non signée"
+msgstr "Lettre de mission non signée"
+
+#. module: sydel_crm
+#: ./data/crm_stage_data.xml
+msgid "Lettre de mission signée"
+msgstr "Lettre de mission signée"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "Lettres de mission"
+msgstr "Lettres de mission"
+
+#. module: sydel_crm
+#: models/sydel_relation_type.py
+msgid "Libellé aller"
+msgstr "Libellé aller"
+
+#. module: sydel_crm
+#: models/sydel_relation_type.py
+msgid "Libellé retour"
+msgstr "Libellé retour"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Mes contacts"
+msgstr "Mes contacts"
+
+#. module: sydel_crm
+#: models/sydel_capital_share.py
+msgid "Montant"
+msgstr "Montant"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Nationalité"
+msgstr "Nationalité"
+
+#. module: sydel_crm
+#: models/sydel_contact_document.py
+msgid "Nom du document"
+msgstr "Nom du document"
+
+#. module: sydel_crm
+#: models/sydel_contact_document.py
+msgid "Nom du fichier"
+msgstr "Nom du fichier"
+
+#. module: sydel_crm
+#: models/sydel_relation_type.py
+msgid "Nom du type"
+msgstr "Nom du type"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Nom et prénom de la mère"
+msgstr "Nom et prénom de la mère"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Nom et prénom du père"
+msgstr "Nom et prénom du père"
+
+#. module: sydel_crm
+#: models/sydel_capital_share.py
+msgid "Nombre de parts"
+msgstr "Nombre de parts"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Nombre de parts / actions"
+msgstr "Nombre de parts / actions"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Notes"
+msgstr "Notes"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Notes Sydel"
+msgstr "Notes Sydel"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Notes internes Odoo"
+msgstr "Notes internes Odoo"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Numéro RPPS"
+msgstr "Numéro RPPS"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Numéros d'identification"
+msgstr "Numéros d'identification"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "N° inscription à l"
+msgstr "N° inscription à l"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Objet social"
+msgstr "Objet social"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Opportunités"
+msgstr "Opportunités"
+
+#. module: sydel_crm
+#: models/sydel_capital_share.py
+msgid "Part (%)"
+msgstr "Part (%)"
+
+#. module: sydel_crm
+#: ./data/partner_category_data.xml
+msgid "Partenaire"
+msgstr "Partenaire"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Personnes morales"
+msgstr "Personnes morales"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Personnes physiques"
+msgstr "Personnes physiques"
+
+#. module: sydel_crm
+#: ./views/crm_lead_views.xml
+msgid "Pipeline"
+msgstr "Pipeline"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "Pièce d'identité"
+msgstr "Pièce d'identité"
+
+#. module: sydel_crm
+#: ./data/partner_category_data.xml
+msgid "Prescripteur"
+msgstr "Prescripteur"
+
+#. module: sydel_crm
+#: models/crm_lead.py
+msgid "Prochaine action"
+msgstr "Prochaine action"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Propriétaire"
+msgstr "Propriétaire"
+
+#. module: sydel_crm
+#: ./data/partner_category_data.xml
+msgid "Prospect"
+msgstr "Prospect"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Prénom"
+msgstr "Prénom"
+
+#. module: sydel_crm
+#: ./data/crm_stage_data.xml
+msgid "R1 — Premier rendez-vous"
+msgstr "R1 — Premier rendez-vous"
+
+#. module: sydel_crm
+#: ./data/crm_stage_data.xml
+msgid "R2 — Deuxième rendez-vous"
+msgstr "R2 — Deuxième rendez-vous"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "Regrouper par"
+msgstr "Regrouper par"
+
+#. module: sydel_crm
+#: ./views/crm_lead_views.xml
+msgid "Relance en retard"
+msgstr "Relance en retard"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Relations"
+msgstr "Relations"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Relations (inverse)"
+msgstr "Relations (inverse)"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Revenus"
+msgstr "Revenus"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Régime matrimonial"
+msgstr "Régime matrimonial"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Répartition du capital"
+msgstr "Répartition du capital"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "SIREN"
+msgstr "SIREN"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "SIRET"
+msgstr "SIRET"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Sexe"
+msgstr "Sexe"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Situation maritale"
+msgstr "Situation maritale"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Situation personnelle"
+msgstr "Situation personnelle"
+
+#. module: sydel_crm
+#: models/sydel_company_director.py
+msgid "Société"
+msgstr "Société"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Source d"
+msgstr "Source d"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "Source d'acquisition"
+msgstr "Source d'acquisition"
+
+#. module: sydel_crm
+#: ./security/security.xml
+msgid "Sydel"
+msgstr "Sydel"
+
+#. module: sydel_crm
+#: models/crm_lead.py
+msgid "Type de mission"
+msgstr "Type de mission"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Type de relation"
+msgstr "Type de relation"
+
+#. module: sydel_crm
+#: ./views/sydel_relation_type_views.xml
+msgid "Types de relations"
+msgstr "Types de relations"
+
+#. module: sydel_crm
+#: models/sydel_contact_relation.py
+msgid "Un contact ne peut pas avoir une relation avec lui-même."
+msgstr "Un contact ne peut pas avoir une relation avec lui-même."
+
+#. module: sydel_crm
+#: ./security/security.xml
+msgid "Utilisateur Sydel"
+msgstr "Utilisateur Sydel"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Valeur unitaire de la part"
+msgstr "Valeur unitaire de la part"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Ville de naissance"
+msgstr "Ville de naissance"
+
+#. module: sydel_crm
+#: ./views/crm_lead_views.xml
+msgid "crm.lead.form.inherit.sydel.crm"
+msgstr "crm.lead.form.inherit.sydel.crm"
+
+#. module: sydel_crm
+#: ./views/crm_lead_views.xml
+msgid "crm.lead.list.inherit.sydel.crm"
+msgstr "crm.lead.list.inherit.sydel.crm"
+
+#. module: sydel_crm
+#: ./views/crm_lead_views.xml
+msgid "crm.lead.search.inherit.sydel.crm"
+msgstr "crm.lead.search.inherit.sydel.crm"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "res.partner.form.inherit.sydel.crm"
+msgstr "res.partner.form.inherit.sydel.crm"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "res.partner.list.inherit.sydel.crm"
+msgstr "res.partner.list.inherit.sydel.crm"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "res.partner.search.inherit.sydel.crm"
+msgstr "res.partner.search.inherit.sydel.crm"
+
+#. module: sydel_crm
+#: ./views/sydel_capital_share_views.xml
+msgid "sydel.capital.share.list"
+msgstr "sydel.capital.share.list"
+
+#. module: sydel_crm
+#: ./views/sydel_company_director_views.xml
+msgid "sydel.company.director.list"
+msgstr "sydel.company.director.list"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "sydel.contact.document.form"
+msgstr "sydel.contact.document.form"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "sydel.contact.document.list"
+msgstr "sydel.contact.document.list"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_document_views.xml
+msgid "sydel.contact.document.search"
+msgstr "sydel.contact.document.search"
+
+#. module: sydel_crm
+#: ./views/sydel_contact_relation_views.xml
+msgid "sydel.contact.relation.list"
+msgstr "sydel.contact.relation.list"
+
+#. module: sydel_crm
+#: ./views/sydel_relation_type_views.xml
+msgid "sydel.relation.type.form"
+msgstr "sydel.relation.type.form"
+
+#. module: sydel_crm
+#: ./views/sydel_relation_type_views.xml
+msgid "sydel.relation.type.list"
+msgstr "sydel.relation.type.list"
+
+#. module: sydel_crm
+#: models/res_partner.py
+msgid "Âge"
+msgstr "Âge"
+
+#. module: sydel_crm
+#: ./views/res_partner_views.xml
+msgid "État civil"
+msgstr "État civil"

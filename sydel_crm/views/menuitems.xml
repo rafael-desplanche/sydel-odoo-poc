@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- Menu racine — application Sydel CRM                           -->
+    <!-- ============================================================ -->
+    <menuitem id="sydel_crm_menu_root"
+              name="Sydel CRM"
+              web_icon="sydel_crm,static/description/icon.png"
+              sequence="5"/>
+
+    <!-- ============================================================ -->
+    <!-- Sous-menus principaux                                         -->
+    <!-- ============================================================ -->
+    <menuitem id="sydel_crm_menu_contacts"
+              name="Contacts"
+              parent="sydel_crm_menu_root"
+              action="sydel_contacts_action"
+              sequence="10"/>
+
+    <menuitem id="sydel_crm_menu_pipeline"
+              name="Pipeline"
+              parent="sydel_crm_menu_root"
+              action="sydel_crm_lead_action"
+              sequence="20"/>
+
+    <!-- ============================================================ -->
+    <!-- Configuration                                                 -->
+    <!-- ============================================================ -->
+    <menuitem id="sydel_crm_menu_config"
+              name="Configuration"
+              parent="sydel_crm_menu_root"
+              sequence="90"/>
+
+    <menuitem id="sydel_crm_menu_relation_types"
+              name="Types de relations"
+              parent="sydel_crm_menu_config"
+              action="sydel_relation_type_action"
+              sequence="10"/>
+
+</odoo>

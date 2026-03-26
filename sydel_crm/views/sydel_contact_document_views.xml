@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ============================================================ -->
+    <!-- sydel.contact.document — Liste                                -->
+    <!-- ============================================================ -->
+    <record id="sydel_contact_document_view_list" model="ir.ui.view">
+        <field name="name">sydel.contact.document.list</field>
+        <field name="model">sydel.contact.document</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="document_type"/>
+                <field name="filename"/>
+                <field name="upload_date"/>
+                <field name="uploaded_by_id"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- sydel.contact.document — Formulaire                           -->
+    <!-- ============================================================ -->
+    <record id="sydel_contact_document_view_form" model="ir.ui.view">
+        <field name="name">sydel.contact.document.form</field>
+        <field name="model">sydel.contact.document</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="document_type"/>
+                            <field name="file" filename="filename"/>
+                            <field name="filename" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="partner_id" invisible="1"/>
+                            <field name="upload_date"/>
+                            <field name="uploaded_by_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="notes" placeholder="Notes sur ce document..."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ============================================================ -->
+    <!-- sydel.contact.document — Recherche                            -->
+    <!-- ============================================================ -->
+    <record id="sydel_contact_document_view_search" model="ir.ui.view">
+        <field name="name">sydel.contact.document.search</field>
+        <field name="model">sydel.contact.document</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" string="Nom du fichier"/>
+                <field name="document_type"/>
+                <separator/>
+                <filter name="filter_id" string="Pièce d'identité"
+                        domain="[('document_type', '=', 'id')]"/>
+                <filter name="filter_contract" string="Contrats"
+                        domain="[('document_type', '=', 'contract')]"/>
+                <filter name="filter_letter" string="Lettres de mission"
+                        domain="[('document_type', '=', 'letter')]"/>
+                <separator/>
+                <group expand="0" string="Regrouper par">
+                    <filter name="groupby_type" string="Catégorie"
+                            context="{'group_by': 'document_type'}"/>
+                    <filter name="groupby_date" string="Date d'ajout"
+                            context="{'group_by': 'upload_date:month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+</odoo>
