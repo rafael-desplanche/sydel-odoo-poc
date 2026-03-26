@@ -10,6 +10,15 @@ class ResPartner(models.Model):
     _inherit = ['res.partner']
 
     # -------------------------------------------------------------------------
+    # Champ devise (requis par les champs Monetary)
+    # -------------------------------------------------------------------------
+    currency_id = fields.Many2one(
+        comodel_name='res.currency',
+        string="Devise",
+        default=lambda self: self.env.company.currency_id,
+    )
+
+    # -------------------------------------------------------------------------
     # Champs — Personne physique (is_company = False)
     # -------------------------------------------------------------------------
     firstname = fields.Char(
