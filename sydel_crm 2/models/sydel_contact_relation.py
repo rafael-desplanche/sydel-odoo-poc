@@ -39,15 +39,12 @@ class SydelContactRelation(models.Model):
     )
 
     # -------------------------------------------------------------------------
-    # Contraintes SQL
+    # Contraintes SQL (syntaxe Odoo v19)
     # -------------------------------------------------------------------------
-    _sql_constraints = [
-        (
-            'unique_relation',
-            'UNIQUE(partner_id, related_partner_id, relation_type_id)',
-            "Cette relation existe déjà entre ces deux contacts.",
-        ),
-    ]
+    _unique_relation = models.Constraint(
+        'UNIQUE(partner_id, related_partner_id, relation_type_id)',
+        "Cette relation existe déjà entre ces deux contacts.",
+    )
 
     # -------------------------------------------------------------------------
     # Contraintes Python

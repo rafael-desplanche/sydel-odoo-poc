@@ -2,6 +2,7 @@ from odoo import fields, models
 
 
 class CrmLead(models.Model):
+    _name = 'crm.lead'
     _inherit = ['crm.lead']
 
     mission_letter_sent_date = fields.Date(
