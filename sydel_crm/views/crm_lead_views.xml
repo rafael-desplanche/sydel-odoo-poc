@@ -62,16 +62,13 @@
         <field name="model">crm.lead</field>
         <field name="inherit_id" ref="crm.view_crm_case_opportunities_filter"/>
         <field name="arch" type="xml">
-            <xpath expr="//group" position="inside">
-                <filter name="groupby_mission_type"
-                        string="Type de mission"
-                        context="{'group_by': 'mission_type'}"/>
-            </xpath>
             <xpath expr="//filter[@name='myopportunities']" position="after">
-                <separator/>
                 <filter name="filter_overdue_action"
                         string="Relance en retard"
                         domain="[('next_action_date', '&lt;', context_today().strftime('%%Y-%%m-%%d'))]"/>
+                <filter name="groupby_mission_type"
+                        string="Type de mission"
+                        context="{'group_by': 'mission_type'}"/>
             </xpath>
         </field>
     </record>

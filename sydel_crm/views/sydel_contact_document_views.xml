@@ -58,20 +58,16 @@
             <search>
                 <field name="name" string="Nom du fichier"/>
                 <field name="document_type"/>
-                <separator/>
                 <filter name="filter_id" string="Pièce d'identité"
                         domain="[('document_type', '=', 'id')]"/>
                 <filter name="filter_contract" string="Contrats"
                         domain="[('document_type', '=', 'contract')]"/>
                 <filter name="filter_letter" string="Lettres de mission"
                         domain="[('document_type', '=', 'letter')]"/>
-                <separator/>
-                <group expand="0" string="Regrouper par">
-                    <filter name="groupby_type" string="Catégorie"
-                            context="{'group_by': 'document_type'}"/>
-                    <filter name="groupby_date" string="Date d'ajout"
-                            context="{'group_by': 'upload_date:month'}"/>
-                </group>
+                <filter name="groupby_type" string="Catégorie"
+                        context="{'group_by': 'document_type'}"/>
+                <filter name="groupby_date" string="Date d'ajout"
+                        context="{'group_by': 'upload_date:month'}"/>
             </search>
         </field>
     </record>

@@ -226,19 +226,15 @@
         <field name="inherit_id" ref="base.view_res_partner_filter"/>
         <field name="arch" type="xml">
             <xpath expr="//filter[@name='type_company']" position="after">
-                <separator/>
                 <filter name="filter_my_contacts"
                         string="Mes contacts"
                         domain="[('assigned_user_ids', 'in', [uid])]"/>
-                <separator/>
                 <filter name="filter_physical"
                         string="Personnes physiques"
                         domain="[('is_company', '=', False)]"/>
                 <filter name="filter_moral"
                         string="Personnes morales"
                         domain="[('is_company', '=', True)]"/>
-            </xpath>
-            <xpath expr="//group" position="inside">
                 <filter name="groupby_source"
                         string="Source d'acquisition"
                         context="{'group_by': 'acquisition_source'}"/>
