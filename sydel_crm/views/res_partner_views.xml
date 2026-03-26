@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- ============================================================ -->
-    <!-- res.partner — Héritage du formulaire                          -->
-    <!-- ============================================================ -->
     <record id="res_partner_view_form_inherit_sydel_crm" model="ir.ui.view">
         <field name="name">res.partner.form.inherit.sydel.crm</field>
         <field name="model">res.partner</field>
@@ -11,7 +8,6 @@
         <field name="priority">20</field>
         <field name="arch" type="xml">
 
-            <!-- ===== Bouton stat "Envoyer un email" dans le header ===== -->
             <xpath expr="//div[@name='button_box']" position="inside">
                 <button name="action_send_email"
                         type="object"
@@ -22,19 +18,14 @@
                 </button>
             </xpath>
 
-            <!-- ===== Prénom à côté du nom ===== -->
             <xpath expr="//field[@name='company_type']" position="after">
                 <field name="firstname"
                        placeholder="Prénom"
                        invisible="is_company"/>
             </xpath>
 
-            <!-- ===== Bloc personne physique — après les champs natifs ===== -->
             <xpath expr="//page[@name='internal_notes']" position="before">
 
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <!-- ONGLET : Identité personne physique                     -->
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <page string="Identité" name="page_identity_physical"
                       invisible="is_company">
                     <group>
@@ -68,9 +59,6 @@
                     </group>
                 </page>
 
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <!-- ONGLET : Identité personne morale                       -->
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <page string="Identité société" name="page_identity_company"
                       invisible="not is_company">
                     <group>
@@ -91,9 +79,6 @@
                     </group>
                 </page>
 
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <!-- ONGLET : Capital social (personne morale)               -->
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <page string="Capital social" name="page_capital"
                       invisible="not is_company">
                     <group>
@@ -126,9 +111,6 @@
                     </field>
                 </page>
 
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <!-- ONGLET : Relations (toile des liens)                    -->
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <page string="Relations" name="page_relations">
                     <field name="relation_ids">
                         <list editable="bottom">
@@ -141,9 +123,6 @@
                     </field>
                 </page>
 
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <!-- ONGLET : Documents                                      -->
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <page string="Documents" name="page_documents">
                     <field name="document_ids">
                         <list>
@@ -156,9 +135,6 @@
                     </field>
                 </page>
 
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                <!-- ONGLET : Opportunités                                   -->
-                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <page string="Opportunités" name="page_opportunities">
                     <field name="opportunity_ids">
                         <list>
@@ -172,12 +148,10 @@
 
             </xpath>
 
-            <!-- ===== Onglet Notes existant → on le renomme ===== -->
             <xpath expr="//page[@name='internal_notes']" position="attributes">
                 <attribute name="string">Notes</attribute>
             </xpath>
 
-            <!-- ===== Champ notes Sydel dans l'onglet Notes ===== -->
             <xpath expr="//page[@name='internal_notes']//field[@name='comment']"
                    position="before">
                 <separator string="Notes Sydel"/>
@@ -186,7 +160,6 @@
                 <separator string="Notes internes Odoo"/>
             </xpath>
 
-            <!-- ===== Suivi — après les tags natifs ===== -->
             <xpath expr="//field[@name='category_id']" position="after">
                 <field name="assigned_user_ids"
                        widget="many2many_tags"
@@ -198,15 +171,12 @@
         </field>
     </record>
 
-    <!-- ============================================================ -->
-    <!-- res.partner — Héritage de la liste                            -->
-    <!-- ============================================================ -->
     <record id="res_partner_view_list_inherit_sydel_crm" model="ir.ui.view">
         <field name="name">res.partner.list.inherit.sydel.crm</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_tree"/>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='display_name']" position="after">
+            <xpath expr="//field[@name='name']" position="after">
                 <field name="firstname" optional="show"/>
                 <field name="legal_form" optional="hide"/>
                 <field name="corporate_purpose" optional="hide"/>
@@ -217,9 +187,6 @@
         </field>
     </record>
 
-    <!-- ============================================================ -->
-    <!-- res.partner — Héritage de la recherche                        -->
-    <!-- ============================================================ -->
     <record id="res_partner_view_search_inherit_sydel_crm" model="ir.ui.view">
         <field name="name">res.partner.search.inherit.sydel.crm</field>
         <field name="model">res.partner</field>
@@ -245,9 +212,6 @@
         </field>
     </record>
 
-    <!-- ============================================================ -->
-    <!-- Action spécifique Sydel Contacts                              -->
-    <!-- ============================================================ -->
     <record id="sydel_contacts_action" model="ir.actions.act_window">
         <field name="name">Contacts</field>
         <field name="res_model">res.partner</field>
