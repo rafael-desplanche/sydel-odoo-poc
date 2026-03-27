@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_sydel_contact" model="ir.ui.view">
+        <field name="name">res.partner.form.sydel.contact</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_view_sydel_relations" type="object" class="oe_stat_button" icon="fa-random">
+                    <field name="sydel_relation_count" string="Relations" widget="statinfo"/>
+                </button>
+                <button name="action_view_sydel_shareholdings" type="object" class="oe_stat_button" icon="fa-pie-chart">
+                    <field name="sydel_shareholding_count" string="Shareholding" widget="statinfo"/>
+                </button>
+                <button name="action_view_sydel_management" type="object" class="oe_stat_button" icon="fa-sitemap">
+                    <field name="sydel_management_count" string="Governance" widget="statinfo"/>
+                </button>
+            </xpath>
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Sydel">
+                    <group>
+                        <group string="Identity">
+                            <field name="sydel_stage_id"/>
+                            <field name="sydel_user_ids" widget="many2many_tags"/>
+                            <field name="sydel_internal_note"/>
+                            <field name="sydel_is_natural_person" readonly="1"/>
+                            <field name="sydel_is_legal_entity" readonly="1"/>
+                        </group>
+                        <group string="Natural Person">
+                            <field name="sydel_firstname"/>
+                            <field name="sydel_lastname"/>
+                            <field name="sydel_birthdate"/>
+                            <field name="sydel_nationality"/>
+                            <field name="sydel_id_number"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Legal Entity">
+                            <field name="sydel_legal_form_id"/>
+                            <field name="sydel_siren"/>
+                            <field name="sydel_registration_city"/>
+                        </group>
+                        <group string="Capital &amp; Governance">
+                            <field name="sydel_currency_id"/>
+                            <field name="sydel_capital_amount"/>
+                            <field name="sydel_governance_note"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_res_partner_search_sydel" model="ir.ui.view">
+        <field name="name">res.partner.search.sydel</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="sydel_stage_id"/>
+                <filter name="sydel_is_person" string="Natural Person" domain="[('company_type', '=', 'person')]"/>
+                <filter name="sydel_is_company" string="Legal Entity" domain="[('company_type', '=', 'company')]"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
