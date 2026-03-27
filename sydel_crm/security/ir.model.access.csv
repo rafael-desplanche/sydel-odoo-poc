@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_sydel_capital_share_user,sydel.capital.share.user,model_sydel_capital_share,sydel_crm.group_sydel_user,1,1,1,1
-access_sydel_company_director_user,sydel.company.director.user,model_sydel_company_director,sydel_crm.group_sydel_user,1,1,1,1
-access_sydel_relation_type_user,sydel.relation.type.user,model_sydel_relation_type,sydel_crm.group_sydel_user,1,1,1,1
-access_sydel_contact_relation_user,sydel.contact.relation.user,model_sydel_contact_relation,sydel_crm.group_sydel_user,1,1,1,1
-access_sydel_contact_document_user,sydel.contact.document.user,model_sydel_contact_document,sydel_crm.group_sydel_user,1,1,1,1
