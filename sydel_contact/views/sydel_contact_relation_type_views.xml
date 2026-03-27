@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sydel_contact_relation_type_list" model="ir.ui.view">
+        <field name="name">sydel.contact.relation.type.list</field>
+        <field name="model">sydel.contact.relation.type</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sydel_contact_relation_type_form" model="ir.ui.view">
+        <field name="name">sydel.contact.relation.type.form</field>
+        <field name="model">sydel.contact.relation.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="active"/>
+                        <field name="description"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_sydel_contact_relation_type_search" model="ir.ui.view">
+        <field name="name">sydel.contact.relation.type.search</field>
+        <field name="model">sydel.contact.relation.type</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_sydel_contact_relation_type" model="ir.actions.act_window">
+        <field name="name">Relation Types</field>
+        <field name="res_model">sydel.contact.relation.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

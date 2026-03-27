@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="sydel_legal_form_sas" model="sydel.legal.form">
+        <field name="name">SAS</field>
+        <field name="code">SAS</field>
+    </record>
+    <record id="sydel_legal_form_sarl" model="sydel.legal.form">
+        <field name="name">SARL</field>
+        <field name="code">SARL</field>
+    </record>
+    <record id="sydel_legal_form_sa" model="sydel.legal.form">
+        <field name="name">SA</field>
+        <field name="code">SA</field>
+    </record>
+</odoo>

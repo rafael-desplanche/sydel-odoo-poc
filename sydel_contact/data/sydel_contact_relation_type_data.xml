@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="sydel_contact_relation_type_shareholder" model="sydel.contact.relation.type">
+        <field name="name">Shareholder</field>
+        <field name="code">shareholder</field>
+    </record>
+    <record id="sydel_contact_relation_type_subsidiary" model="sydel.contact.relation.type">
+        <field name="name">Subsidiary</field>
+        <field name="code">subsidiary</field>
+    </record>
+    <record id="sydel_contact_relation_type_partner" model="sydel.contact.relation.type">
+        <field name="name">Business Partner</field>
+        <field name="code">business_partner</field>
+    </record>
+</odoo>

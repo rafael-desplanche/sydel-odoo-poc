@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_sydel_contact_root" name="Sydel Contacts" parent="contacts.menu_contacts" sequence="80" groups="sydel_contact.group_sydel_contact_user"/>
+
+    <menuitem id="menu_sydel_contact_configuration" name="Configuration" parent="menu_sydel_contact_root" sequence="90" groups="sydel_contact.group_sydel_contact_manager"/>
+
+    <menuitem id="menu_sydel_contact_relation" name="Relations" parent="menu_sydel_contact_root" action="action_sydel_contact_relation" sequence="10" groups="sydel_contact.group_sydel_contact_user"/>
+    <menuitem id="menu_sydel_contact_shareholding" name="Shareholdings" parent="menu_sydel_contact_root" action="action_sydel_contact_shareholding" sequence="20" groups="sydel_contact.group_sydel_contact_user"/>
+    <menuitem id="menu_sydel_contact_management" name="Governance" parent="menu_sydel_contact_root" action="action_sydel_contact_management" sequence="30" groups="sydel_contact.group_sydel_contact_user"/>
+
+    <menuitem id="menu_sydel_contact_stage" name="Stages" parent="menu_sydel_contact_configuration" action="action_sydel_contact_stage" sequence="10" groups="sydel_contact.group_sydel_contact_manager"/>
+    <menuitem id="menu_sydel_contact_relation_type" name="Relation Types" parent="menu_sydel_contact_configuration" action="action_sydel_contact_relation_type" sequence="20" groups="sydel_contact.group_sydel_contact_manager"/>
+    <menuitem id="menu_sydel_legal_form" name="Legal Forms" parent="menu_sydel_contact_configuration" action="action_sydel_legal_form" sequence="30" groups="sydel_contact.group_sydel_contact_manager"/>
+</odoo>
